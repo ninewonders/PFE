@@ -511,6 +511,7 @@ class ComposerStaticInit966d37d80e0de5946d7c8449b84d5fb6
     public static $classMap = array (
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
+        'App\\Http\\Controllers\\AdminController' => __DIR__ . '/../..' . '/app/Http/Controllers/AdminController.php',
         'App\\Http\\Controllers\\CertificatMedicalController' => __DIR__ . '/../..' . '/app/Http/Controllers/CertificatMedicalController.php',
         'App\\Http\\Controllers\\ConsultationController' => __DIR__ . '/../..' . '/app/Http/Controllers/ConsultationController.php',
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
@@ -518,7 +519,6 @@ class ComposerStaticInit966d37d80e0de5946d7c8449b84d5fb6
         'App\\Http\\Controllers\\MedicamentController' => __DIR__ . '/../..' . '/app/Http/Controllers/MedicamentController.php',
         'App\\Http\\Controllers\\OrdonnanceController' => __DIR__ . '/../..' . '/app/Http/Controllers/OrdonnanceController.php',
         'App\\Http\\Controllers\\PatientController' => __DIR__ . '/../..' . '/app/Http/Controllers/PatientController.php',
-        'App\\Http\\Controllers\\RendezVousController' => __DIR__ . '/../..' . '/app/Http/Controllers/RendezVousController.php',
         'App\\Http\\Kernel' => __DIR__ . '/../..' . '/app/Http/Kernel.php',
         'App\\Http\\Middleware\\Authenticate' => __DIR__ . '/../..' . '/app/Http/Middleware/Authenticate.php',
         'App\\Http\\Middleware\\EncryptCookies' => __DIR__ . '/../..' . '/app/Http/Middleware/EncryptCookies.php',
@@ -537,7 +537,6 @@ class ComposerStaticInit966d37d80e0de5946d7c8449b84d5fb6
         'App\\Models\\Ordonnance' => __DIR__ . '/../..' . '/app/Models/Ordonnance.php',
         'App\\Models\\Patient' => __DIR__ . '/../..' . '/app/Models/Patient.php',
         'App\\Models\\RendezVous' => __DIR__ . '/../..' . '/app/Models/RendezVous.php',
-        'App\\Models\\User' => __DIR__ . '/../..' . '/app/Models/User.php',
         'App\\Providers\\AppServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AppServiceProvider.php',
         'App\\Providers\\AuthServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AuthServiceProvider.php',
         'App\\Providers\\BroadcastServiceProvider' => __DIR__ . '/../..' . '/app/Providers/BroadcastServiceProvider.php',

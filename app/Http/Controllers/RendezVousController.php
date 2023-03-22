@@ -13,7 +13,7 @@ class RendezVousController extends Controller
      */
     public function index()
     {
-        return RendezVous::select('id','date_rdv','heure_rdv','nom','prenom','num_tel')->get();
+        return rendezvous::select('id','date_rdv','heure_rdv','nom','prenom','num_tel')->get();
     }
 
     /**
@@ -37,17 +37,25 @@ class RendezVousController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(RendezVous $RendezVous)
+    /*
+    public function show(rendezvous $RendezVous)
     {
+
         return response()->json([
             'RendezVous' => $RendezVous
         ]);
+    }*/
+
+    public function show($id)
+    {
+        $rendezVous = RendezVous::findOrFail($id);
+        return response()->json($rendezVous);
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, RendezVous $RendezVous)
+    public function update(Request $request, $id)
     {
         $request->validate([
             'date_rdv' => 'required',
@@ -56,7 +64,8 @@ class RendezVousController extends Controller
             'prenom' => 'required',
             'num_tel' => 'required'
         ]);
-        $RendezVous->fill($request->post())->update();
+        $rendezVous = RendezVous::findOrFail($id);
+        $rendezVous->fill($request->post())->update();
         return response()->json([
             'message' => 'Rendez Vous updated successfully'
         ]);
@@ -65,9 +74,10 @@ class RendezVousController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(RendezVous $RendezVous)
+    public function destroy($id)
     {
-        $RendezVous->delete();
+        $rendezVous = RendezVous::findOrFail($id);
+        $rendezVous->delete();
         return response()->json([
             'message' => 'Rendez Vous deleted successfully'
         ]);

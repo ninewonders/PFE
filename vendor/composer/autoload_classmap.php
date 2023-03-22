@@ -8,6 +8,7 @@ $baseDir = dirname($vendorDir);
 return array(
     'App\\Console\\Kernel' => $baseDir . '/app/Console/Kernel.php',
     'App\\Exceptions\\Handler' => $baseDir . '/app/Exceptions/Handler.php',
+    'App\\Http\\Controllers\\AdminController' => $baseDir . '/app/Http/Controllers/AdminController.php',
     'App\\Http\\Controllers\\CertificatMedicalController' => $baseDir . '/app/Http/Controllers/CertificatMedicalController.php',
     'App\\Http\\Controllers\\ConsultationController' => $baseDir . '/app/Http/Controllers/ConsultationController.php',
     'App\\Http\\Controllers\\Controller' => $baseDir . '/app/Http/Controllers/Controller.php',
@@ -15,7 +16,6 @@ return array(
     'App\\Http\\Controllers\\MedicamentController' => $baseDir . '/app/Http/Controllers/MedicamentController.php',
     'App\\Http\\Controllers\\OrdonnanceController' => $baseDir . '/app/Http/Controllers/OrdonnanceController.php',
     'App\\Http\\Controllers\\PatientController' => $baseDir . '/app/Http/Controllers/PatientController.php',
-    'App\\Http\\Controllers\\RendezVousController' => $baseDir . '/app/Http/Controllers/RendezVousController.php',
     'App\\Http\\Kernel' => $baseDir . '/app/Http/Kernel.php',
     'App\\Http\\Middleware\\Authenticate' => $baseDir . '/app/Http/Middleware/Authenticate.php',
     'App\\Http\\Middleware\\EncryptCookies' => $baseDir . '/app/Http/Middleware/EncryptCookies.php',
@@ -34,7 +34,6 @@ return array(
     'App\\Models\\Ordonnance' => $baseDir . '/app/Models/Ordonnance.php',
     'App\\Models\\Patient' => $baseDir . '/app/Models/Patient.php',
     'App\\Models\\RendezVous' => $baseDir . '/app/Models/RendezVous.php',
-    'App\\Models\\User' => $baseDir . '/app/Models/User.php',
     'App\\Providers\\AppServiceProvider' => $baseDir . '/app/Providers/AppServiceProvider.php',
     'App\\Providers\\AuthServiceProvider' => $baseDir . '/app/Providers/AuthServiceProvider.php',
     'App\\Providers\\BroadcastServiceProvider' => $baseDir . '/app/Providers/BroadcastServiceProvider.php',

@@ -2,14 +2,14 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\PatientContoller;
-use App\Http\Controllers\ConsultationContoller;
-use App\Http\Controllers\OrdonnanceContoller;
-use App\Http\Controllers\MedicamentContoller;
-use App\Http\Controllers\RendezVousContoller;
-use App\Http\Controllers\CertificatMedicalContoller;
-use App\Http\Controllers\FactureContoller;
-use App\Http\Controllers\AdminContoller;
+use App\Http\Controllers\PatientController;
+use App\Http\Controllers\ConsultationController;
+use App\Http\Controllers\OrdonnanceController;
+use App\Http\Controllers\MedicamentController;
+use App\Http\Controllers\RendezVousController;
+use App\Http\Controllers\CertificatMedicalController;
+use App\Http\Controllers\FactureController;
+use App\Http\Controllers\AdminController;
 
 /*
 |--------------------------------------------------------------------------
@@ -26,11 +26,11 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::resource('patient', PatientContoller::class);
-Route::resource('consultation', ConsultationContoller::class);
-Route::resource('ordonnance', OrdonnanceContoller::class);
-Route::resource('medicament', MedicamentContoller::class);
-Route::resource('rendez_vous', RendezVousContoller::class);
-Route::resource('certificat_medical', CertificatMedicalContoller::class);
-Route::resource('facture', FactureContoller::class);
-Route::resource('admin', AdminContoller::class);
+Route::resource('patient', PatientController::class);
+Route::resource('consultation', ConsultationController::class);
+Route::resource('ordonnance', OrdonnanceController::class);
+Route::resource('medicament', MedicamentController::class);
+Route::resource('rendez_vous', RendezVousController::class);
+Route::resource('certificat_medical', CertificatMedicalController::class);
+Route::resource('facture', FactureController::class);
+Route::resource('admin', AdminController::class);

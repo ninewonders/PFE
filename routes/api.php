@@ -35,4 +35,3 @@ Route::resource('facture', FactureController::class);
 Route::resource('admin', AdminController::class);
 
 Route::resource('rendez_vous', RendezVousController::class);
-Route::get('/rendez_vous/{id}', 'RendezVousController@show');
